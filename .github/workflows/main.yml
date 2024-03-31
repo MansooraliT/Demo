@@ -16,7 +16,7 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 587
-          username: Mansoor Ali
+          username: mansoorali5157
           password: Mansoor#5157
           from: mansoorali5157@gmail.com
           subject: 'Workflow Notification'

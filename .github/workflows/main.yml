@@ -1,7 +1,25 @@
 on: push
+
 jobs:
   first-job:
     runs-on: windows-latest
     steps:
-      - run: node --version
-      - run: npm  --version
+      - name: Check Node.js version
+        run: node --version
+        
+      - name: Check npm version
+        run: npm --version
+        
+      # Add email notification step
+      - name: Notify via email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: mansoorali5157@gmail.com
+          password: rafr etfj capf zwia
+          from: mansoorali5157@gmail.com
+          subject: 'Workflow Notification'
+          to: mansoorali9160@gmail.com
+          body: |
+            The workflow has completed successfully.

@@ -16,6 +16,7 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 587
+          from: mansoorali9160@gmail.com
           subject: 'Workflow Notification'
           to: mansoorali5157@gmail.com
           body: |
